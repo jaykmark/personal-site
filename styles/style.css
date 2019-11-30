@@ -1,7 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* ------------------------------ BACKGROUND ------------------------------ */
 .background {
   background: url("../images/retro-grid.gif") no-repeat center center fixed;
   background-size: cover;
+  padding-bottom: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ------------------------------ HERO ------------------------------ */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: yellow;
+}
+
+/* ------------------------------ PORTFOLIO ------------------------------ */
+.portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90vw;
+}
+
+.portfolio-container h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+/* ---------------- CARD TEMPLATE ---------------- */
+.card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+  -ms-flex-negative: 0.5;
+      flex-shrink: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 125px 50px 25px;
+}
+
+.card-background {
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+  border: 1px solid black;
+}
+
+.card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: 275px;
+  height: 275px;
+  -webkit-transform: translate(-32px, -85px);
+          transform: translate(-32px, -85px);
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+}
+
+.card-image img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+}
+
+.card-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 255px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  -webkit-transform: translate(75px, -160px);
+          transform: translate(75px, -160px);
+  border: 1px solid black;
+  overflow: scroll;
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+  font-family: 'Viga';
+}
+
+.card-description {
+  font-size: 12px;
+  -webkit-transform: translate(20px, -118px);
+          transform: translate(20px, -118px);
+  height: 58px;
+  width: 260px;
+  overflow: auto;
+}
+
+.card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 175px;
+  height: 25px;
+  font-size: 12px;
+  -webkit-transform: translate(60px, -112px);
+          transform: translate(60px, -112px);
 }
 
 /* ------------------------------ ICONS ------------------------------ */
@@ -14,8 +178,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 800px;
-  height: 600px;
+  width: 90vw;
+  height: 10vw;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#81c2de), to(#4f92ac));
   background-image: linear-gradient(to bottom right, #81c2de, #4f92ac);
   -webkit-transition: all .4s ease-out;
