@@ -1,7 +1,16 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans';
 }
 
 $font-color: yellow;
@@ -14,37 +23,76 @@ $font-color: yellow;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter(column);
 }
 
 /* ------------------------------ HERO ------------------------------ */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(column);
   text-align: center;
   height: 100vh;
-  color: $font-color;
+    h1 {
+      font-family: 'Viga';
+      font-size: 69px;
+      // font-weight: 900;
+      color: yellow;
+    }
+    h2, h3 {
+      font-family: 'Viga';
+      color: gold;
+    }
+}
+
+.name-plate {
+  transform: translate(0, 5vh);
+  letter-spacing: 0.75;
+  line-height: 1.6;
+}
+
+.btn-portfolio {
+  transform: translate(0, 6vh);
+  width: 200px;
+  height: 40px;
+  background: firebrick;
+  border: firebrick;
+    &:hover {
+      background: red;
+    }
+    &:active {
+      background: red;
+    }
+}
+
+.contact {
+  transform: translate(0, 125px);
+  color: white;
+  a {
+    color: white;
+    font-size: 18px;
+  }
 }
 
 /* ------------------------------ PORTFOLIO ------------------------------ */
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 90vw;
+  text-align: center;
+  padding-top: 5vw;
   h2 {
     flex-basis: 100%;
+    color: yellow;
+    font-family: 'Viga';
+    font-size: 48px;
+    margin: 0;
   }
 }
 
 /* ---------------- CARD TEMPLATE ---------------- */
 .card {
   box-shadow: none;
-  flex-grow: 1.5;
+  // flex-grow: 1.5;
   flex-shrink: 0.5;
   display: flex;
   justify-content: center;
@@ -53,11 +101,10 @@ $font-color: yellow;
 }
 
 .card-background {
-
   width: 300px;
   height: 300px;
-  box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
-  border: 1px solid black;
+  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
+  // border: 1px solid black;
 }
 
 .card-image{
@@ -68,7 +115,7 @@ $font-color: yellow;
   width: 275px;
   height: 275px;
   transform: translate(-32px, -85px);
-  box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
+  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
 }
 
 .card-image img {
@@ -76,7 +123,7 @@ $font-color: yellow;
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
+  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
 }
 
 .card-name {
@@ -91,7 +138,7 @@ $font-color: yellow;
   transform: translate(75px, -160px);
   border: 1px solid black;
   overflow: scroll;
-  box-shadow: 3px 11px 20px -4px rgba(0,0,0,0.24);
+  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
   font-family: 'Viga';
 }
 
@@ -101,72 +148,69 @@ $font-color: yellow;
   height: 58px;
   width: 260px;
   overflow: auto;
+  h4 {
+    font-size: 18px;
+  }
+}
+
+.card-buttons {
+  @include flexCenter(row);
 }
 
 .card-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 175px;
+  width: 125px;
   height: 25px;
   font-size: 12px;
-  transform: translate(60px, -112px)
+  margin: 0 5px;
+  transform: translate(0px, -110px)
 }
 
 /* ------------------------------ ICONS ------------------------------ */
-// https://codepen.io/frebliklo/pen/YeqaNB?editors=1000
-
-$color-primary: #81c2de;
-$color-primary-light: #b4f5ff;
-$color-primary-dark: #4f92ac;
 
 $color-white: #FFFBFA;
-
 $color-black: #191308;
 
 .wrapper {
+  transform: translate(0, 100px);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90vw;
+  justify-content: center;
+  align-items: space-around;
+  width: 30vw;
   height: 10vw;
-  background-image: linear-gradient(to bottom right, rgba($color-primary,1),rgba($color-primary-dark,1));
   transition: all .4s ease-out;
   
   &__links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 40%;
   }
 }
 
 .social-link {
+  &--github {
+    color: black;
+  }
 
   &--linkedin {
     color: #2d76b0;
-  }
-
-  &--github {
-    color: #000;
   }
 
   &--instagram {
     color: #9a2970;
   }
 
-  &--dribbble {
-    color: #b53561;
-  }
-
   & .social-svg {
-    width: 4.8rem;
-    height: 4.8rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 20px;
 
     & .social-group {
-
       &__icon {
-        fill: $color-black;
+        fill: $color-white;
         transition: all .2s;
       }
 
@@ -176,17 +220,14 @@ $color-black: #191308;
       }
 
       &__outline {
-        stroke: $color-black;
+        stroke: $color-white;
         transform-origin: 50% 50%;
         transition: all .2s;
       }
-  
   }
 
   &:hover, &:active, &:focus {
-
     & .social-group {
-
       &__icon {
         fill: $color-white;
         transition: all .45s;
@@ -196,22 +237,21 @@ $color-black: #191308;
         fill: currentColor;
         transition: all .45s;
 
+        &--linkedin {
+          fill: white !important;
+        }
+
         &--instagram {
           fill: url(#simpleInsta) !important;
         }
-
       }
 
       &__outline {
-        stroke: currentColor;
+        stroke: $color-white;
         transform: scale(1.1);
         transition: all .45s;
       }
-
     } 
-
   }
-
   }
-
 }

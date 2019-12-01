@@ -3,6 +3,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans';
 }
 
 /* ------------------------------ BACKGROUND ------------------------------ */
@@ -13,13 +15,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* ------------------------------ HERO ------------------------------ */
@@ -27,19 +32,64 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   height: 100vh;
+}
+
+.hero h1 {
+  font-family: 'Viga';
+  font-size: 69px;
   color: yellow;
+}
+
+.hero h2, .hero h3 {
+  font-family: 'Viga';
+  color: gold;
+}
+
+.name-plate {
+  -webkit-transform: translate(0, 5vh);
+          transform: translate(0, 5vh);
+  letter-spacing: 0.75;
+  line-height: 1.6;
+}
+
+.btn-portfolio {
+  -webkit-transform: translate(0, 6vh);
+          transform: translate(0, 6vh);
+  width: 200px;
+  height: 40px;
+  background: firebrick;
+  border: firebrick;
+}
+
+.btn-portfolio:hover {
+  background: red;
+}
+
+.btn-portfolio:active {
+  background: red;
+}
+
+.contact {
+  -webkit-transform: translate(0, 125px);
+          transform: translate(0, 125px);
+  color: white;
+}
+
+.contact a {
+  color: white;
+  font-size: 18px;
 }
 
 /* ------------------------------ PORTFOLIO ------------------------------ */
@@ -49,23 +99,27 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 90vw;
+  text-align: center;
+  padding-top: 5vw;
 }
 
 .portfolio-container h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  color: yellow;
+  font-family: 'Viga';
+  font-size: 48px;
+  margin: 0;
 }
 
 /* ---------------- CARD TEMPLATE ---------------- */
 .card {
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-box-flex: 1.5;
-      -ms-flex-positive: 1.5;
-          flex-grow: 1.5;
   -ms-flex-negative: 0.5;
       flex-shrink: 0.5;
   display: -webkit-box;
@@ -83,9 +137,8 @@
 .card-background {
   width: 300px;
   height: 300px;
-  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
-          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
-  border: 1px solid black;
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+          box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
 }
 
 .card-image {
@@ -103,8 +156,8 @@
   height: 275px;
   -webkit-transform: translate(-32px, -85px);
           transform: translate(-32px, -85px);
-  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
-          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+          box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
 }
 
 .card-image img {
@@ -114,8 +167,8 @@
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
-          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+          box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
 }
 
 .card-name {
@@ -137,8 +190,8 @@
           transform: translate(75px, -160px);
   border: 1px solid black;
   overflow: scroll;
-  -webkit-box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
-          box-shadow: 3px 11px 20px -4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+          box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
   font-family: 'Viga';
 }
 
@@ -151,6 +204,26 @@
   overflow: auto;
 }
 
+.card-description h4 {
+  font-size: 18px;
+}
+
+.card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .card-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,27 +234,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 175px;
+  width: 125px;
   height: 25px;
   font-size: 12px;
-  -webkit-transform: translate(60px, -112px);
-          transform: translate(60px, -112px);
+  margin: 0 5px;
+  -webkit-transform: translate(0px, -110px);
+          transform: translate(0px, -110px);
 }
 
 /* ------------------------------ ICONS ------------------------------ */
 .wrapper {
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  width: 30vw;
   height: 10vw;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#81c2de), to(#4f92ac));
-  background-image: linear-gradient(to bottom right, #81c2de, #4f92ac);
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
 }
@@ -190,38 +265,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 40%;
+}
+
+.social-link--github {
+  color: black;
 }
 
 .social-link--linkedin {
   color: #2d76b0;
 }
 
-.social-link--github {
-  color: #000;
-}
-
 .social-link--instagram {
   color: #9a2970;
 }
 
-.social-link--dribbble {
-  color: #b53561;
-}
-
 .social-link .social-svg {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 20px;
 }
 
 .social-link .social-svg .social-group__icon {
-  fill: #191308;
+  fill: #FFFBFA;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -233,7 +305,7 @@
 }
 
 .social-link .social-svg .social-group__outline {
-  stroke: #191308;
+  stroke: #FFFBFA;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: all .2s;
@@ -252,12 +324,16 @@
   transition: all .45s;
 }
 
+.social-link .social-svg:hover .social-group__inner-circle--linkedin, .social-link .social-svg:active .social-group__inner-circle--linkedin, .social-link .social-svg:focus .social-group__inner-circle--linkedin {
+  fill: white !important;
+}
+
 .social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
   fill: url(#simpleInsta) !important;
 }
 
 .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-  stroke: currentColor;
+  stroke: #FFFBFA;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all .45s;
