@@ -92,7 +92,6 @@ $font-color: yellow;
 /* ---------------- CARD TEMPLATE ---------------- */
 .card {
   box-shadow: none;
-  // flex-grow: 1.5;
   flex-shrink: 0.5;
   display: flex;
   justify-content: center;
@@ -104,7 +103,6 @@ $font-color: yellow;
   width: 300px;
   height: 300px;
   box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
-  // border: 1px solid black;
 }
 
 .card-image{
@@ -132,7 +130,7 @@ $font-color: yellow;
   align-items: center;
   width: 255px;
   height: 40px;
-  background-color: black;
+  background-color: #05044C;
   color: white;
   font-size: 24px;
   transform: translate(75px, -160px);
@@ -166,6 +164,22 @@ $font-color: yellow;
   font-size: 12px;
   margin: 0 5px;
   transform: translate(0px, -110px)
+}
+
+.btn-live {
+  background: #9B74F1;
+  border: #9B74F1;
+  &:hover, &:active {
+    background: #E66BF9;
+  }
+}
+
+.btn-source {
+  border: #383ADF;
+  background: #383ADF;
+  &:hover, &:active {
+    background: #2F95EB;
+  }
 }
 
 /* ------------------------------ ICONS ------------------------------ */

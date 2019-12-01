@@ -183,7 +183,7 @@
           align-items: center;
   width: 255px;
   height: 40px;
-  background-color: black;
+  background-color: #05044C;
   color: white;
   font-size: 24px;
   -webkit-transform: translate(75px, -160px);
@@ -240,6 +240,24 @@
   margin: 0 5px;
   -webkit-transform: translate(0px, -110px);
           transform: translate(0px, -110px);
+}
+
+.btn-live {
+  background: #9B74F1;
+  border: #9B74F1;
+}
+
+.btn-live:hover, .btn-live:active {
+  background: #E66BF9;
+}
+
+.btn-source {
+  border: #383ADF;
+  background: #383ADF;
+}
+
+.btn-source:hover, .btn-source:active {
+  background: #2F95EB;
 }
 
 /* ------------------------------ ICONS ------------------------------ */
