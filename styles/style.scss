@@ -22,8 +22,8 @@ $font-color: yellow;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 5vw;
   @include flexCenter(column);
+  padding: 0 5vw 5vw;
 }
 
 /* ------------------------------ HERO ------------------------------ */
@@ -41,6 +41,34 @@ $font-color: yellow;
       font-family: 'Viga';
       color: gold;
     }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .hero {
+    h1 {
+      font-size: 69px;
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+  }
 }
 
 .name-plate {
@@ -92,7 +120,7 @@ $font-color: yellow;
 /* ---------------- CARD TEMPLATE ---------------- */
 .card {
   box-shadow: none;
-  flex-shrink: 0.5;
+  flex-shrink: 0.2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,6 +138,7 @@ $font-color: yellow;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-shrink: 0.2;
   width: 275px;
   height: 275px;
   transform: translate(-32px, -85px);
@@ -145,10 +174,14 @@ $font-color: yellow;
   transform: translate(20px, -118px);
   height: 58px;
   width: 260px;
-  overflow: auto;
   h4 {
     font-size: 18px;
     font-weight: 900;
+    // margin-bottom: 0;
+  }
+  p {
+    overflow: scroll;
+    transform: translateY(-5px);
   }
 }
 
