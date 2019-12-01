@@ -148,6 +148,7 @@ $font-color: yellow;
   overflow: auto;
   h4 {
     font-size: 18px;
+    font-weight: 900;
   }
 }
 
@@ -169,7 +170,7 @@ $font-color: yellow;
 .btn-live {
   background: #9B74F1;
   border: #9B74F1;
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     background: #E66BF9;
   }
 }
@@ -177,7 +178,7 @@ $font-color: yellow;
 .btn-source {
   border: #383ADF;
   background: #383ADF;
-  &:hover, &:active {
+  &:hover, &:active, &:focus{
     background: #2F95EB;
   }
 }

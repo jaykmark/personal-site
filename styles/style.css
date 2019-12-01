@@ -206,6 +206,7 @@
 
 .card-description h4 {
   font-size: 18px;
+  font-weight: 900;
 }
 
 .card-buttons {
@@ -247,7 +248,7 @@
   border: #9B74F1;
 }
 
-.btn-live:hover, .btn-live:active {
+.btn-live:hover, .btn-live:active, .btn-live:focus {
   background: #E66BF9;
 }
 
@@ -256,7 +257,7 @@
   background: #383ADF;
 }
 
-.btn-source:hover, .btn-source:active {
+.btn-source:hover, .btn-source:active, .btn-source:focus {
   background: #2F95EB;
 }
 
