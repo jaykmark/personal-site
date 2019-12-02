@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
   <!-- https://www.pngfly.com/png-pf51g4/download.html -->
   <title>Jay Mark</title>
@@ -20,14 +22,19 @@
   <div class="background">
     <section class="hero">
       <div class="name-plate">
-        <h1>Jay K. Mark</h1>
-        <!-- <h2>Software Engineer</h2> -->
-        <h3>Front-End Focused | Full-Stack Experience</h3>
+        <div class="animated fadeInDown">
+          <h1>Jay K. Mark</h1>
+          <!-- <h2>Software Engineer</h2> -->
+          <h3>Front-End Focused | Full-Stack Experience</h3>
+        </div>
       </div>
-      <a href="#portfolio"><button class="btn btn-primary btn-portfolio">VIEW PORTFOLIO</button></a>
-    
+      
+      <div class="animated fadeInDown">
+        <a href="#portfolio"><button class="btn btn-primary btn-portfolio">VIEW PORTFOLIO</button></a>
+      </div>
+
       <div class="wrapper">
-        <div class="wrapper__links">
+        <div class="wrapper__links animated fadeInUp">
         <a class="social-link social-link--github" id="github" href="https://github.com/jaykmark" target="_blank">
           <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
             <title>
@@ -57,8 +64,10 @@
         </div>
       </div>
       <div class="contact">
-        <a href="#">RESUME</a> |
-        <a href="#">CONTACT</a>
+        <div class="animated fadeInUp">
+          <a href="#">RESUME</a> |
+          <a href="#">CONTACT</a>
+        </div> 
       </div>
     </section>
     <section id="portfolio" class="portfolio-container">
@@ -66,12 +75,12 @@
         <div class="card">  
             <div class="card-background">
             <div class="card-image">
-                <img src="#" alt="Bandwagon"/>
+                <img src="https://i.pinimg.com/originals/83/1e/4c/831e4ca78b97ee3c646c8244061f0b3b.jpg" alt="Bandwagon"/>
             </div>
             <div class="card-name">Bandwagon</div>
             <div class="card-description">
               <h4>Django, Python, CSS, Jinja</h4>
-              <p>Band Forming Platform</p>
+              <p>Music Social Platform. Connect with bands and musicians. Showcase your talent.</p>
             </div>
             <div class="card-buttons">
                 <a href="#" class="card-button btn btn-primary btn-live">LIVE SITE</a>
@@ -82,12 +91,12 @@
         <div class="card">  
             <div class="card-background">
             <div class="card-image">
-                <img src="#" alt="Nook & Novel"/>
+                <img src="./images/portfolio/nook-and-novel.png" alt="Nook & Novel"/>
             </div>
             <div class="card-name">Nook & Novel</div>
             <div class="card-description">
               <h4>jQuery, Node, Express, Mongo</h4>
-              <p>Book list tracking social platform. Utilizes Google Books API. You can also find nearby coffee shops.</p>
+              <p>Book list tracking social platform with Google Books API. Find nearby coffee shops.</p>
             </div>
             <div class="card-buttons">
                 <a href="http://nookandnovel.herokuapp.com/" target="_blank" class="card-button btn btn-primary btn-live">LIVE SITE</a>
@@ -99,7 +108,7 @@
         <div class="card">  
           <div class="card-background">
           <div class="card-image">
-              <img src="#" alt="Wayfarer"/>
+              <img src="./images/portfolio/creed.jpg" alt="Wayfarer"/>
           </div>
           <div class="card-name">Wayfarer</div>
           <div class="card-description">
@@ -115,7 +124,7 @@
         <div class="card">  
             <div class="card-background">
             <div class="card-image">
-                <img src="#" alt="Intergalactic Bounty"/>
+                <img src="./images/portfolio/intergalactic-bounty.png" alt="Intergalactic Bounty"/>
             </div>
             <div class="card-name">Intergalactic Bounty</div>
             <div class="card-description">
@@ -136,7 +145,7 @@
           <div class="card-name">Capstone</div>
           <div class="card-description">
             <h4>React, Node, Express, Mongo</h4>
-            <p>Bushwick franzen banjo chillwave, heirloom waistcoat pour-over selvage subway tile tote bag photo booth YOLO fam hot chicken. Tattooed XOXO aesthetic, meh drinking vinegar thundercats copper mug lyft. Paleo leggings squid vaporware hot chicken quinoa kinfolk ethical stumptown art party slow-carb, tumeric lo-fi shaman chartreuse.</p>
+            <p>Bushwick franzen banjo chillwave, heirloom waistcoat pour-over selvage subway tile.</p>
           </div>
           <div class="card-buttons">
               <a href="#" class="card-button btn btn-primary btn-live">LIVE SITE</a>

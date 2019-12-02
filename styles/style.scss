@@ -131,6 +131,7 @@ $font-color: yellow;
   width: 300px;
   height: 300px;
   box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
+  background: white;
 }
 
 .card-image{
@@ -138,19 +139,22 @@ $font-color: yellow;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  flex-shrink: 0.2;
+  flex-shrink: 0;
   width: 275px;
   height: 275px;
   transform: translate(-32px, -85px);
   box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
+  background: #F2EA74
+  ;
+  background: rgba(255, 255, 0, 0.8);
+  // background: yellow;
 }
 
 .card-image img {
   flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  // min-height: 100%;
   object-fit: cover;
-  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
 }
 
 .card-name {
@@ -174,15 +178,15 @@ $font-color: yellow;
   transform: translate(20px, -118px);
   height: 58px;
   width: 260px;
-  overflow: scroll;
+  // overflow: auto;
   h4 {
     font-size: 18px;
     font-weight: 900;
-    // margin-bottom: 0;
   }
   p {
-    overflow: scroll;
+    // overflow: scroll;
     transform: translateY(-5px);
+    margin: 0;
   }
 }
 
