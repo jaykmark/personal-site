@@ -221,6 +221,7 @@
           transform: translate(20px, -118px);
   height: 58px;
   width: 260px;
+  overflow: scroll;
 }
 
 .card-description h4 {
