@@ -180,7 +180,7 @@
   -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
           box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
   background: #F2EA74;
-  background: rgba(255, 255, 0, 0.8);
+  background: rgba(255, 255, 100, 0.8);
 }
 
 .card-image img {
