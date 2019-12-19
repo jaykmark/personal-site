@@ -61,8 +61,66 @@
       <div class="contact">
         <div class="animated fadeInUp">
           <a href="./images/JayMark_Resume.pdf" target="_blank">RESUME</a> |
-          <a href="mailto:jaykmark@gmail.com">CONTACT</a>
+          <a href="#" data-toggle="modal" data-target="#contact-form">CONTACT</a>
         </div> 
+      </div>
+
+      <!-- Contact Form -->
+      <div class="modal fade" id="contact-form" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Leave a message! Or email me at jaykmark@gmail.com</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="modal-body">
+              <form action="https://formspree.io/mgeovlbo" method="POST" target="_blank">
+                <div class="form-group">
+                  <input
+                    class="form-control form-control-md"
+                    type="text"
+                    id="name"
+                    name="name"
+                    minLength="1"
+                    maxLength="50"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control form-control-md"
+                    type="email"
+                    id="email"
+                    name="email"
+                    minLength="1"
+                    maxLength="50"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control form-control-md"
+                    type="text"
+                    id="message"
+                    name="message"
+                    minLength="1"
+                    maxLength="200"
+                    rows="3"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn btn-primary float-right" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="portfolio" class="portfolio-container">
@@ -121,7 +179,7 @@
         <div class="card">  
             <div class="card-background">
             <div class="card-image">
-                <img src="./images/portfolio/bandwagon2.png" alt="Bandwagon"/>
+                <img src="./images/portfolio/bandwagon.png" alt="Bandwagon"/>
             </div>
             <div class="card-name">Bandwagon</div>
             <div class="card-description">
