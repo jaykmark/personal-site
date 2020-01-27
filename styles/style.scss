@@ -10,20 +10,27 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 $font-color: yellow;
 
 /* ------------------------------ BACKGROUND ------------------------------ */
 .background {
-  background: url('../images/retro-grid.gif') no-repeat center center fixed;
+  background: url("../images/retro-grid.gif") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   @include flexCenter(column);
   padding: 0 5vw 5vw;
+  // opacity: 0.3;
+}
+
+.opacity {
+  background: rgba(140, 117, 106, 1);
+  z-index: 100;
+  min-height: 100vh;
 }
 
 /* ------------------------------ HERO ------------------------------ */
@@ -31,16 +38,17 @@ $font-color: yellow;
   @include flexCenter(column);
   text-align: center;
   height: 100vh;
-    h1 {
-      font-family: 'Viga';
-      font-size: 69px;
-      // font-weight: 900;
-      color: yellow;
-    }
-    h2, h3 {
-      font-family: 'Viga';
-      color: gold;
-    }
+  h1 {
+    font-family: "Viga";
+    font-size: 69px;
+    // font-weight: 900;
+    color: yellow;
+  }
+  h2,
+  h3 {
+    font-family: "Viga";
+    color: gold;
+  }
 }
 
 @media (max-width: 700px) {
@@ -63,10 +71,8 @@ $font-color: yellow;
       font-size: 69px;
     }
     h2 {
-
     }
     h3 {
-
     }
   }
 }
@@ -83,12 +89,12 @@ $font-color: yellow;
   height: 40px;
   background: firebrick;
   border: firebrick;
-    &:hover {
-      background: red;
-    }
-    &:active {
-      background: red;
-    }
+  &:hover {
+    background: red;
+  }
+  &:active {
+    background: red;
+  }
 }
 
 .contact {
@@ -111,7 +117,7 @@ $font-color: yellow;
   h2 {
     flex-basis: 100%;
     color: yellow;
-    font-family: 'Viga';
+    font-family: "Viga";
     font-size: 48px;
     margin: 0;
   }
@@ -130,11 +136,11 @@ $font-color: yellow;
 .card-background {
   width: 300px;
   height: 300px;
-  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
+  box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
   background: white;
 }
 
-.card-image{
+.card-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,9 +149,8 @@ $font-color: yellow;
   width: 275px;
   height: 275px;
   transform: translate(-32px, -85px);
-  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
-  background: #F2EA74
-  ;
+  box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+  background: #f2ea74;
   background: rgba(255, 255, 100, 0.8);
 }
 
@@ -161,15 +166,15 @@ $font-color: yellow;
   justify-content: center;
   align-items: center;
   width: 255px;
-  height: 40px;
-  background-color: #05044C;
+  height: 50px;
+  background-color: #05044c;
   color: white;
   font-size: 24px;
   transform: translate(75px, -160px);
   border: 1px solid black;
   overflow: scroll;
-  box-shadow: 3px 11px 20px -4px rgba(255,255,255,0.7);
-  font-family: 'Viga';
+  box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
+  font-family: "Viga";
 }
 
 .card-description {
@@ -201,28 +206,32 @@ $font-color: yellow;
   height: 25px;
   font-size: 12px;
   margin: 0 5px;
-  transform: translate(0px, -110px)
+  transform: translate(0px, -110px);
 }
 
 .btn-live {
-  background: #9B74F1;
-  border: #9B74F1;
-  &:hover, &:active, &:focus {
-    background: #E66BF9;
+  background: #9b74f1;
+  border: #9b74f1;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #e66bf9;
   }
 }
 
 .btn-source {
-  border: #383ADF;
-  background: #383ADF;
-  &:hover, &:active, &:focus{
-    background: #2F95EB;
+  border: #383adf;
+  background: #383adf;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #2f95eb;
   }
 }
 
 /* ------------------------------ ICONS ------------------------------ */
 
-$color-white: #FFFBFA;
+$color-white: #fffbfa;
 $color-black: #191308;
 
 .wrapper {
@@ -232,8 +241,8 @@ $color-black: #191308;
   align-items: space-around;
   width: 30vw;
   height: 10vw;
-  transition: all .4s ease-out;
-  
+  transition: all 0.4s ease-out;
+
   &__links {
     display: flex;
     justify-content: center;
@@ -263,47 +272,49 @@ $color-black: #191308;
     & .social-group {
       &__icon {
         fill: $color-white;
-        transition: all .2s;
+        transition: all 0.2s;
       }
 
       &__inner-circle {
         fill: transparent;
-        transition: all .2s;
+        transition: all 0.2s;
       }
 
       &__outline {
         stroke: $color-white;
         transform-origin: 50% 50%;
-        transition: all .2s;
+        transition: all 0.2s;
       }
-  }
+    }
 
-  &:hover, &:active, &:focus {
-    & .social-group {
-      &__icon {
-        fill: $color-white;
-        transition: all .45s;
-      }
-
-      &__inner-circle {
-        fill: currentColor;
-        transition: all .45s;
-
-        &--linkedin {
-          fill: white !important;
+    &:hover,
+    &:active,
+    &:focus {
+      & .social-group {
+        &__icon {
+          fill: $color-white;
+          transition: all 0.45s;
         }
 
-        &--instagram {
-          fill: url(#simpleInsta) !important;
+        &__inner-circle {
+          fill: currentColor;
+          transition: all 0.45s;
+
+          &--linkedin {
+            fill: white !important;
+          }
+
+          &--instagram {
+            fill: url(#simpleInsta) !important;
+          }
+        }
+
+        &__outline {
+          stroke: $color-white;
+          transform: scale(1.1);
+          transition: all 0.45s;
         }
       }
-
-      &__outline {
-        stroke: $color-white;
-        transform: scale(1.1);
-        transition: all .45s;
-      }
-    } 
-  }
+    }
   }
 }

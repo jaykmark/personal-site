@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 /* ------------------------------ BACKGROUND ------------------------------ */
@@ -27,6 +27,12 @@
   padding: 0 5vw 5vw;
 }
 
+.opacity {
+  background: #8c756a;
+  z-index: 100;
+  min-height: 100vh;
+}
+
 /* ------------------------------ HERO ------------------------------ */
 .hero {
   display: -webkit-box;
@@ -47,13 +53,14 @@
 }
 
 .hero h1 {
-  font-family: 'Viga';
+  font-family: "Viga";
   font-size: 69px;
   color: yellow;
 }
 
-.hero h2, .hero h3 {
-  font-family: 'Viga';
+.hero h2,
+.hero h3 {
+  font-family: "Viga";
   color: gold;
 }
 
@@ -129,7 +136,7 @@
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   color: yellow;
-  font-family: 'Viga';
+  font-family: "Viga";
   font-size: 48px;
   margin: 0;
 }
@@ -179,7 +186,7 @@
           transform: translate(-32px, -85px);
   -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
           box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
-  background: #F2EA74;
+  background: #f2ea74;
   background: rgba(255, 255, 100, 0.8);
 }
 
@@ -202,8 +209,8 @@
       -ms-flex-align: center;
           align-items: center;
   width: 255px;
-  height: 40px;
-  background-color: #05044C;
+  height: 50px;
+  background-color: #05044c;
   color: white;
   font-size: 24px;
   -webkit-transform: translate(75px, -160px);
@@ -212,7 +219,7 @@
   overflow: scroll;
   -webkit-box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
           box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
-  font-family: 'Viga';
+  font-family: "Viga";
 }
 
 .card-description {
@@ -269,21 +276,21 @@
 }
 
 .btn-live {
-  background: #9B74F1;
-  border: #9B74F1;
+  background: #9b74f1;
+  border: #9b74f1;
 }
 
 .btn-live:hover, .btn-live:active, .btn-live:focus {
-  background: #E66BF9;
+  background: #e66bf9;
 }
 
 .btn-source {
-  border: #383ADF;
-  background: #383ADF;
+  border: #383adf;
+  background: #383adf;
 }
 
 .btn-source:hover, .btn-source:active, .btn-source:focus {
-  background: #2F95EB;
+  background: #2f95eb;
 }
 
 /* ------------------------------ ICONS ------------------------------ */
@@ -301,8 +308,8 @@
           align-items: space-around;
   width: 30vw;
   height: 10vw;
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .wrapper__links {
@@ -337,35 +344,35 @@
 }
 
 .social-link .social-svg .social-group__icon {
-  fill: #FFFBFA;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  fill: #fffbfa;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .social-link .social-svg .social-group__inner-circle {
   fill: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .social-link .social-svg .social-group__outline {
-  stroke: #FFFBFA;
+  stroke: #fffbfa;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
-  fill: #FFFBFA;
-  -webkit-transition: all .45s;
-  transition: all .45s;
+  fill: #fffbfa;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 .social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
   fill: currentColor;
-  -webkit-transition: all .45s;
-  transition: all .45s;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 .social-link .social-svg:hover .social-group__inner-circle--linkedin, .social-link .social-svg:active .social-group__inner-circle--linkedin, .social-link .social-svg:focus .social-group__inner-circle--linkedin {
@@ -377,10 +384,10 @@
 }
 
 .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-  stroke: #FFFBFA;
+  stroke: #fffbfa;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all .45s;
-  transition: all .45s;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 /*# sourceMappingURL=style.css.map */
