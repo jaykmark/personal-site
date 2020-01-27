@@ -17,20 +17,14 @@ $font-color: yellow;
 
 /* ------------------------------ BACKGROUND ------------------------------ */
 .background {
-  background: url("../images/retro-grid.gif") no-repeat center center fixed;
+  background: url("../images/retro-grid-2.gif") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   @include flexCenter(column);
   padding: 0 5vw 5vw;
-  // opacity: 0.3;
-}
-
-.opacity {
-  background: rgba(140, 117, 106, 1);
-  z-index: 100;
-  min-height: 100vh;
+  z-index: 1;
 }
 
 /* ------------------------------ HERO ------------------------------ */
@@ -114,6 +108,8 @@ $font-color: yellow;
   width: 90vw;
   text-align: center;
   padding-top: 5vw;
+  background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 1;
   h2 {
     flex-basis: 100%;
     color: yellow;
@@ -166,13 +162,13 @@ $font-color: yellow;
   justify-content: center;
   align-items: center;
   width: 255px;
-  height: 50px;
+  height: 40px;
   background-color: #05044c;
   color: white;
   font-size: 24px;
   transform: translate(75px, -160px);
   border: 1px solid black;
-  overflow: scroll;
+  overflow: none;
   box-shadow: 3px 11px 20px -4px rgba(255, 255, 255, 0.7);
   font-family: "Viga";
 }
@@ -182,13 +178,11 @@ $font-color: yellow;
   transform: translate(20px, -118px);
   height: 58px;
   width: 260px;
-  // overflow: auto;
   h4 {
     font-size: 18px;
     font-weight: 900;
   }
   p {
-    // overflow: scroll;
     transform: translateY(-5px);
     margin: 0;
   }
